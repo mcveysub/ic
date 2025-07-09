@@ -148,7 +148,7 @@ const InvestmentCommitteeDashboard = () => {
   const getStatusIcon = (status) => {
     if (status === 'resolved') return <Check className="w-4 h-4 text-green-600" />;
     if (status === 'unresolved') return <AlertTriangle className="w-4 h-4 text-red-600" />;
-    return <Clock className="w-4 h-4 text-yellow-600" />;
+    return <Clock className="w-4 h-4 text-purple-600" />;
   };
 
   const ProjectDetailPage = ({ project }) => (
@@ -172,7 +172,7 @@ const InvestmentCommitteeDashboard = () => {
           <div className="text-right">
             <p className="text-3xl font-bold text-blue-600">{formatCurrency(project.amount)}</p>
             <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
-              project.priority === 'high' ? 'bg-red-100 text-red-800' : 'bg-yellow-100 text-yellow-800'
+              project.priority === 'high' ? 'bg-red-100 text-red-800' : 'bg-purple-100 text-purple-800'
             }`}>
               {project.priority} priority
             </div>
@@ -255,7 +255,7 @@ const InvestmentCommitteeDashboard = () => {
                     <span className={`text-xs px-2 py-1 rounded-full font-medium ${
                       issue.status === 'resolved' ? 'bg-green-100 text-green-800' :
                       issue.status === 'unresolved' ? 'bg-red-100 text-red-800' :
-                      'bg-yellow-100 text-yellow-800'
+                      'bg-purple-100 text-purple-800'
                     }`}>
                       {issue.status}
                     </span>
@@ -318,13 +318,13 @@ const InvestmentCommitteeDashboard = () => {
             <TrendingUp className="w-8 h-8 text-green-600" />
           </div>
         </div>
-        <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+        <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-yellow-600">Cash Position</p>
-              <p className="text-2xl font-bold text-yellow-900">{formatCurrency(portfolioMetrics.cashPosition)}</p>
+              <p className="text-sm font-medium text-purple-600">Cash Position</p>
+              <p className="text-2xl font-bold text-purple-900">{formatCurrency(portfolioMetrics.cashPosition)}</p>
             </div>
-            <DollarSign className="w-8 h-8 text-yellow-600" />
+            <DollarSign className="w-8 h-8 text-purple-600" />
           </div>
         </div>
       </div>
@@ -383,7 +383,7 @@ const InvestmentCommitteeDashboard = () => {
               <div className="text-right">
                 <p className="text-sm font-medium">Limit: {formatCurrency(member.limit)}</p>
                 <div className="flex items-center mt-1">
-                  <div className={`w-2 h-2 rounded-full mr-2 ${member.status === 'online' ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
+                  <div className={`w-2 h-2 rounded-full mr-2 ${member.status === 'online' ? 'bg-green-500' : 'bg-purple-500'}`}></div>
                   <span className="text-sm text-gray-600 capitalize">{member.status}</span>
                 </div>
               </div>
@@ -455,7 +455,7 @@ const InvestmentCommitteeDashboard = () => {
                 <p className="text-2xl font-bold text-blue-600">{formatCurrency(item.amount)}</p>
                 <div className="flex items-center space-x-2 mt-1">
                   <div className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
-                    item.priority === 'high' ? 'bg-red-100 text-red-800' : 'bg-yellow-100 text-yellow-800'
+                    item.priority === 'high' ? 'bg-red-100 text-red-800' : 'bg-purple-100 text-purple-800'
                   }`}>
                     {item.priority} priority
                   </div>
