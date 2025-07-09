@@ -318,13 +318,13 @@ const InvestmentCommitteeDashboard = () => {
             <TrendingUp className="w-8 h-8 text-green-600" />
           </div>
         </div>
-        <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
+        <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-purple-600">Cash Position</p>
-              <p className="text-2xl font-bold text-purple-900">{formatCurrency(portfolioMetrics.cashPosition)}</p>
+              <p className="text-sm font-medium text-yellow-600">Cash Position</p>
+              <p className="text-2xl font-bold text-yellow-900">{formatCurrency(portfolioMetrics.cashPosition)}</p>
             </div>
-            <DollarSign className="w-8 h-8 text-purple-600" />
+            <DollarSign className="w-8 h-8 text-yellow-600" />
           </div>
         </div>
       </div>
