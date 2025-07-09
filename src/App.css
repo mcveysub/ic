@@ -1,0 +1,9 @@
+/* Reset and clean up default styles for the Investment Committee Dashboard */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Remove default Vite styles that are not needed for the dashboard */
