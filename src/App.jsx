@@ -299,7 +299,7 @@ const InvestmentCommitteeDashboard = () => {
   const OverviewTab = () => (
     <div className="space-y-6">
       {/* Portfolio Metrics */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
           <div className="flex items-center justify-between">
             <div>
@@ -316,15 +316,6 @@ const InvestmentCommitteeDashboard = () => {
               <p className="text-2xl font-bold text-green-900">{portfolioMetrics.ytdReturn}%</p>
             </div>
             <TrendingUp className="w-8 h-8 text-green-600" />
-          </div>
-        </div>
-        <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-medium text-yellow-600">Monthly Return</p>
-              <p className="text-2xl font-bold text-yellow-900">{portfolioMetrics.monthlyReturn}%</p>
-            </div>
-            <TrendingUp className="w-8 h-8 text-yellow-600" />
           </div>
         </div>
         <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
